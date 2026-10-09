@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #172033;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #101827;
+            color: white;
+            padding: 22px 8%;
+        }
+
+        main {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            padding: 70px 0;
+            text-align: center;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #dceafe;
+            color: #174ea6;
+            padding: 8px 14px;
+            border-radius: 20px;
+            margin-bottom: 22px;
+        }
+
+        h2 {
+            font-size: clamp(35px, 6vw, 60px);
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #526078;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 14px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #68758a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <main>
+        <span class="tag">Welcome</span>
+
+        <h2>Your Website Is Live!</h2>
+
+        <p>
+            Welcome to my website.
+            This is my first HTML, CSS and JavaScript project.
+        </p>
+
+        <a class="button" href="mailto:hello@example.com">
+            Contact Me
+        </a>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> My Website
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
